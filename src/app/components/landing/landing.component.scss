@@ -6,5 +6,28 @@
 
 .landing-container {
   height: 100vh;
-  background-color: pink;
+  background-color: #353535;
+  padding-top: 100px;
+  overflow: clip;
+}
+
+.landing-text-container {
+
+}
+
+.wolfcycle-logo img {
+  object-fit: cover;
+  max-width: 20rem;
+}
+
+.wolf-img-container {
+  position: relative;
+}
+
+.wolfcycle-wolf {
+  position: absolute;
+  height: 1000px;
+  top: -200px;
+  right: 100px;
+  z-index: 1;
 }

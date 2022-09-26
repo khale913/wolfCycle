@@ -13,7 +13,8 @@
   justify-content: space-between;
   padding: 1rem 0 .5rem 0;
   border-style: none;
-  border: none;
+  border: 1px solid white;
+  z-index: 9999;
 }
 
 .navbar-logo-container {
