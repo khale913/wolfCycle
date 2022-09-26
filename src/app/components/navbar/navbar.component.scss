@@ -8,5 +8,53 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: red;
+  background-color: #353535;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 .5rem 0;
+  border-style: none;
+  border: none;
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 1rem;
+}
+
+.wolfcycle-logo {
+  object-fit: cover;
+  max-width: 18rem;
+}
+
+.navbar-tabs-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.tabs-ul {
+  display: flex;
+}
+
+.tab {
+  font-family: 'Century-Bold';
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: #b2b2b2;
+}
+
+.active-tab {
+  color: #E7FF6D;
+}
+
+.active-tab:hover {
+  color: #E7FF6D;
 }
