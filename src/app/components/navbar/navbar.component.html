@@ -6,11 +6,15 @@
 
   <div class="navbar-tabs-container">
     <ul class="tabs-ul">
-      <li class="tab active-tab" (click)="navigateSection('home')">Home</li>
-      <li class="tab" (click)="navigateSection('partners')">Partners</li>
-      <li class="tab" (click)="navigateSection('testimonials')">Testimonials</li>
-      <li class="tab" (click)="navigateSection('services')">Services</li>
-      <li class="tab" (click)="navigateSection('contact')">Contact</li>
+      <li [ngClass]="{'active-tab': activeTab === 'home'}" class="tab" (click)="navigateSection('home')">Home</li>
+      <li [ngClass]="{'active-tab': activeTab === 'partners'}" class="tab" (click)="navigateSection('partners')">
+        Partners</li>
+      <li [ngClass]="{'active-tab': activeTab === 'testimonials'}" class="tab"
+        (click)="navigateSection('testimonials')">Testimonials</li>
+      <li [ngClass]="{'active-tab': activeTab === 'services'}" class="tab" (click)="navigateSection('services')">
+        Services</li>
+      <li [ngClass]="{'active-tab': activeTab === 'contact'}" class="tab" (click)="navigateSection('contact')">Contact
+      </li>
     </ul>
   </div>
 </div>
