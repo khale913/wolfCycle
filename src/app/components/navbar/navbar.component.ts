@@ -12,4 +12,14 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigateSection(section: string) {
+
+    document.getElementById(section)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+
+  }
+
 }

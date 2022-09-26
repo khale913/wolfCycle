@@ -6,11 +6,11 @@
 
   <div class="navbar-tabs-container">
     <ul class="tabs-ul">
-      <li class="tab active-tab">Home</li>
-      <li class="tab">Partners</li>
-      <li class="tab">Testimonials</li>
-      <li class="tab">Services</li>
-      <li class="tab">Contact</li>
+      <li class="tab active-tab" (click)="navigateSection('home')">Home</li>
+      <li class="tab" (click)="navigateSection('partners')">Partners</li>
+      <li class="tab" (click)="navigateSection('testimonials')">Testimonials</li>
+      <li class="tab" (click)="navigateSection('services')">Services</li>
+      <li class="tab" (click)="navigateSection('contact')">Contact</li>
     </ul>
   </div>
 </div>
