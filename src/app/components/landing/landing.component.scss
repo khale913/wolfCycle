@@ -36,6 +36,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  z-index: 9999;
 }
 .container p {
   font-size: 3rem;
@@ -44,10 +45,13 @@
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
+  z-index: 9999;
 }
 .container p span.typed-text {
   font-weight: normal;
+  font-family: 'Century-Gothic';
   color: #dd7732;
+  z-index: 9999;
 }
 .container p span.cursor {
   display: inline-block;
@@ -55,9 +59,11 @@
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
+  z-index: 9999;
 }
 .container p span.cursor.typing {
   animation: none;
+  z-index: 9999;
 }
 @keyframes blink {
   0%  { background-color: #ccc; }
