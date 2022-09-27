@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class LandingComponent implements OnInit {
   typedTextSpan: any;
   cursorSpan: any;
-  textArray: any = ["REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA", "BETTER EFFECIENCY", "BETTER MARGINS"];
+  textArray: any = ["REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA.", "BETTER EFFECIENCY.", "BETTER MARGINS.", "REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA.", "BETTER EFFECIENCY.", "BETTER MARGINS.", "REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA.", "BETTER EFFECIENCY.", "BETTER MARGINS.", "REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA.", "BETTER EFFECIENCY.", "BETTER MARGINS.", "REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA.", "BETTER EFFECIENCY.", "BETTER MARGINS.", "REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA.", "BETTER EFFECIENCY.", "BETTER MARGINS.", "REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA.", "BETTER EFFECIENCY.", "BETTER MARGINS.", "REAL INTELLIGENCE", "AUTOMATED EXECUTION", "CONVERSATIONAL MARKETING", "BETTER DATA.", "BETTER EFFECIENCY.", "BETTER MARGINS.",];
 
-  typingDelay: number = 200;
+  typingDelay: number = 75;
   erasingDelay: number = 100;
-  newTextDelay: number = 2000;
+  newTextDelay: number = 1500;
 
   textArrayIndex: number = 0;
   charIndex: number = 0;
@@ -30,9 +30,10 @@ export class LandingComponent implements OnInit {
   }
 
   type() {
+    console.log(this.typingDelay, this.newTextDelay)
     this.cursorSpan = document.querySelector('.cursor');
     this.typedTextSpan = document.querySelector('.typed-text');
-    console.log('type', this.textArrayIndex, this.charIndex)
+    // console.log('type', this.textArrayIndex, this.charIndex)
     if (this.charIndex < this.textArray[this.textArrayIndex].length) {
       if (!this.cursorSpan.classList.contains("typing"))
         this.cursorSpan.classList.add("typing");
@@ -40,7 +41,6 @@ export class LandingComponent implements OnInit {
       this.charIndex++;
       setTimeout(() => {
         this.type()
-        console.log('here')
       }, this.typingDelay);
 
     } else {
@@ -55,9 +55,8 @@ export class LandingComponent implements OnInit {
 
 
   erase() {
-    console.log('erase');
+    // console.log('erase');
     if (this.charIndex >= 0) {
-      console.log('boo');
       if (!this.cursorSpan.classList.contains('typing'))
         this.cursorSpan.classList.add('typing');
       this.typedTextSpan.textContent = this.textArray[this.textArrayIndex].substring(0, this.charIndex - 1);
@@ -70,16 +69,16 @@ export class LandingComponent implements OnInit {
     } else {
       this.cursorSpan.classList.remove('typing');
       this.textArrayIndex++
-      console.log('next')
+
       setTimeout(() => {
         this.type()
-      }, this.typingDelay + 1100);
+      }, this.typingDelay + 100);
       if (this.textArrayIndex >= this.textArray.length) {
         this.textArrayIndex = 0;
-        console.log('asss')
+
         setTimeout(() => {
           this.type()
-        }, this.typingDelay + 1100);
+        }, this.typingDelay + 100);
       }
     }
   }

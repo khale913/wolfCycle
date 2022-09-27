@@ -12,12 +12,21 @@
 }
 
 .landing-text-container {
+  margin-left: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.wolfcycle-logo {
+  z-index: 99999;
 }
 
 .wolfcycle-logo img {
   object-fit: cover;
   max-width: 20rem;
+  z-index: 99999;
 }
 
 .wolf-img-container {
@@ -27,7 +36,7 @@
 .wolfcycle-wolf {
   position: absolute;
   height: 1000px;
-  top: -200px;
+  top: -750px;
   right: 100px;
   z-index: 1;
 }
@@ -49,14 +58,16 @@
 }
 .container p span.typed-text {
   font-weight: normal;
-  font-family: 'Century-Gothic';
-  color: #dd7732;
+  font-family: 'Century-Bold';
+  font-size: 4rem;
+  color: #E7FF6D;
   z-index: 9999;
 }
 .container p span.cursor {
   display: inline-block;
   background-color: #ccc;
-  margin-left: 0.1rem;
+  font-size: 4rem;
+  margin-left: 0.2rem;
   width: 3px;
   animation: blink 1s infinite;
   z-index: 9999;
