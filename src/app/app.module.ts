@@ -11,6 +11,7 @@ import { DemoComponent } from './components/demo/demo.component';
 import { UnknownPageComponent } from './components/unknown-page/unknown-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DemoComponent,
     UnknownPageComponent,
     NavbarComponent,
+
 
   ],
   imports: [
