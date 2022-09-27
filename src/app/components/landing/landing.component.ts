@@ -83,4 +83,8 @@ export class LandingComponent implements OnInit {
     }
   }
 
+  clickedHere() {
+    console.log('aclciac');
+  }
+
 }
