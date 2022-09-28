@@ -7,3 +7,13 @@
 .partners-container {
   z-index: 999;
 }
+
+.partners-header {
+  display: flex;
+  justify-content: center;
+}
+
+.partners-header h2 {
+  font-family: 'Century-Bold';
+  font-size: 4rem;
+}
