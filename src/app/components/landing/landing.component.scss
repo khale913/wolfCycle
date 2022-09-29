@@ -35,10 +35,10 @@
 }
 
 .wolfcycle-wolf {
-  position: absolute;
+  position: relative;
   height: 1000px;
   top: -750px;
-  right: 100px;
+  left: 50%;
   z-index: 1;
 }
 
@@ -165,13 +165,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .wolfcycle-wolf {
-    position: absolute;
-    height: 1000px;
-    top: -750px;
-    right: 35%;
-    z-index: 1;
-  }
+
 
   .landing-text-container {
     margin-left: 20px;
@@ -214,10 +208,10 @@
   }
 
   .wolfcycle-wolf {
+    position: relative;
     height: 1000px;
-    top: -850px;
-    right: 26%;
-
+    left: 30%;
+    z-index: 1;
   }
 
   .landing-text-container {
