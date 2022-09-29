@@ -21,7 +21,7 @@
 .navbar-logo-container {
   display: flex;
   align-items: flex-end;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .wolfcycle-logo {
@@ -129,6 +129,12 @@ border-bottom: 1px solid grey;
 @media screen and (max-width: 550px) {
   .wolfcycle-logo {
     max-width: 13rem;
+  }
+
+  .navbar-logo-container {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 1rem;
   }
 }
 
