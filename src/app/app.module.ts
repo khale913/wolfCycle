@@ -10,6 +10,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { DemoComponent } from './components/demo/demo.component';
 import { UnknownPageComponent } from './components/unknown-page/unknown-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DemoComponent,
     UnknownPageComponent,
     NavbarComponent,
+    FooterComponent,
 
 
   ],

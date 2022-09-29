@@ -5,17 +5,20 @@
 }
 
 .partners-container {
+  background-color: #E6E6E6;
   z-index: 999;
 }
 
-.partners-header {
+
+.section-header {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  padding-top: var(--section-padding);
 }
 
-.partners-header h2 {
+.section-header h2 {
   font-family: 'Century-Bold';
+  color: #605E5E;
   font-size: 4rem;
   text-align: center;
 }
