@@ -8,6 +8,7 @@
   height: 90vh;
   width: 100%;
   background-color: var(--background-grey);
+  // background-color: var(--main-yellow);
 
 }
 
@@ -21,6 +22,7 @@
 .section-header h2 {
   font-family: 'Century-Bold';
   color: #605E5E;
+  // color:  var(--dark-grey);
   font-size: 4rem;
   text-align: center;
   margin-bottom: 80px;
@@ -29,6 +31,8 @@
 .section-header p {
   font-family: 'Century-Gothic';
   color: #605E5E;
+
+  // color:  var(--dark-grey);
   font-size: 1.3rem;
   text-align: center;
   margin-bottom: 75px;
@@ -43,14 +47,17 @@
 .demo-input {
   width: 700px;
   background-color: #D9D9D9;
+  // background-color: var(--dark-grey);
+
   border: none;
   padding: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 input::placeholder {
   font-family: 'Century-Gothic';
   color: #605E5E;
+  // color: var(--main-yellow)
 }
 
 .submit-container {
@@ -66,6 +73,6 @@ input::placeholder {
   font-size: 1rem;
   padding: .75rem 3rem;
   background-color: transparent;
-  border: 5px solid #605E5E;
-  color: #605E5E;
+  border: 5px solid  var(--dark-grey);
+  color:  var(--dark-grey);
 }
