@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   activeTab: string = 'home';
+  navOpen: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -21,5 +22,12 @@ export class NavbarComponent implements OnInit {
     });
 
   }
+
+  operateNav() {
+    console.log('open nav')
+    // document.getElementById("mySidenav").style.width = "250px";
+    this.navOpen = !this.navOpen;
+  }
+
 
 }

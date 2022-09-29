@@ -66,3 +66,78 @@
 .active-tab:hover {
   color: #E7FF6D;
 }
+
+.sidenav {
+  margin-top: 72px;
+
+  height: 100%;
+  z-index: 999999999999 !important;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #2F2E2E;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+padding: 14px 25px 14px 20px;
+margin-right: 20px;
+border-bottom: 1px solid grey;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.nav-open {
+  width: 60%
+}
+
+.mobile-tab {
+  color: white !important;
+  font-family: 'Century-Gothic';
+  padding-bottom: 1rem;
+
+}
+
+.active-mobile-tab {
+  color: #E7FF6D !important;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .wolfcycle-logo {
+    max-width: 13rem;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .tabs-ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
