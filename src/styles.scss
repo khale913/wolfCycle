@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-yellow: #FAFE2A;
+  --dark-grey: #353535;
+}
+
+
  @font-face {
   font-family: 'Century-Gothic';
   src: url('./assets/Fonts/century-gothic/Century Gothic.ttf');
@@ -12,4 +19,5 @@
   font-family: 'Century-Bold';
   src: url('./assets/Fonts/century-gothic/GOTHICB.TTF');
  }
+
 

@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #353535;
+  background-color: var(--dark-grey);
 
   display: flex;
   justify-content: space-between;
@@ -61,11 +61,11 @@
 }
 
 .active-tab {
-  color: #E7FF6D;
+  color: var(--main-yellow)
 }
 
 .active-tab:hover {
-  color: #E7FF6D;
+  color: var(--main-yellow);
 }
 
 .sidenav {
@@ -119,7 +119,7 @@ border-bottom: 1px solid grey;
 }
 
 .active-mobile-tab {
-  color: #E7FF6D !important;
+  color: var(--main-yellow) !important;
 }
 
 .hamburger {

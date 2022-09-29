@@ -7,7 +7,7 @@
 .landing-container {
   position: relative;
   height: 100vh;
-  background-color: #353535;
+  background-color: var(--dark-grey);
   padding-top: 100px;
   overflow: hidden;
 }
@@ -64,7 +64,7 @@
   font-weight: normal;
   font-family: 'Century-Bold';
   font-size: 4rem;
-  color: #E7FF6D;
+  color: var(--main-yellow);
   z-index: 9999;
 }
 .container p span.cursor {
@@ -109,9 +109,9 @@
 }
 
 .landing-btn button:hover {
-  color: #E7FF6D;
-  border: 2px solid #E7FF6D;
-  background-color: #353535;
+  color: --main-yellow;
+  border: 2px solid var(--main-yellow);
+  background-color:var(--dark-grey);
   transition: .2s;
 }
 
@@ -129,14 +129,14 @@
   height:15px;
   width: 15px;
   border-radius: 15px;
-  border: 2px solid #E7FF6D;
+  border: 2px solid var(--main-yellow);
   margin-bottom: 3rem;
   cursor: pointer;
   z-index: 999999999;
 }
 
 .one {
-  background-color: #E7FF6D;
+  background-color: var(--main-yellow);
 }
 
 
@@ -198,7 +198,7 @@
 }
 
 .container {
-  width: 100%;
+  width: 106%;
 }
 }
 
@@ -228,7 +228,7 @@
   }
 
   .container p span.typed-text {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .landing-btn button {
