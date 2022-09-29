@@ -5,10 +5,11 @@
 }
 
 .landing-container {
+  position: relative;
   height: 100vh;
   background-color: #353535;
   padding-top: 100px;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .landing-text-container {
