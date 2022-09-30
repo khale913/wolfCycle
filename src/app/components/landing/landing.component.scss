@@ -139,7 +139,7 @@
   background-color: var(--main-yellow);
 }
 
-@media only screen and (max-width: 3000px) {
+@media only screen and (min-width: 1500px) {
   .wolfcycle-wolf {
     height: 1200px;
     top: -1000px;
@@ -151,6 +151,14 @@
 
   .wolfcycle-logo img {
     max-width: 30rem;
+  }
+
+}
+
+@media only screen and (min-height: 900px) {
+  .wolfcycle-wolf {
+    height: 1200px;
+    top: -1000px;
   }
 
 }
