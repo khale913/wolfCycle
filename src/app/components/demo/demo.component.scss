@@ -76,3 +76,10 @@ input::placeholder {
   border: 5px solid  var(--dark-grey);
   color:  var(--dark-grey);
 }
+
+@media only screen and (max-width: 3000px) {
+  .section-header h2 {
+    font-size: 5rem;
+  }
+
+  }

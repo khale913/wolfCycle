@@ -139,6 +139,22 @@
   background-color: var(--main-yellow);
 }
 
+@media only screen and (max-width: 3000px) {
+  .wolfcycle-wolf {
+    height: 1200px;
+    top: -1000px;
+  }
+
+  .container p span.typed-text {
+    font-size: 5rem;
+  }
+
+  .wolfcycle-logo img {
+    max-width: 30rem;
+  }
+
+}
+
 
 @media only screen and (max-width: 1000px) {
   .container p span.typed-text {
