@@ -33,7 +33,7 @@ export class LandingComponent implements OnInit {
   type() {
     this.cursorSpan = document.querySelector('.cursor');
     this.typedTextSpan = document.querySelector('.typed-text');
-    console.log(this.textArrayIndex)
+    // console.log(this.textArrayIndex)
 
 
     if (this.charIndex < this.textArray[this.textArrayIndex].length) {
