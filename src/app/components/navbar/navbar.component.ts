@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CursorService } from 'src/app/SERVICE/cursor.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   activeTab: string = 'home';
   navOpen: boolean = false;
-  constructor() { }
+  hover: boolean = false;
+  constructor(private service: CursorService) { }
 
   ngOnInit(): void {
+    this.service.hover.subscribe(c => {
+      this.hover = c;
+    })
+  }
+
+  hoverFunction(bool: boolean) {
+    this.service.hoverElement(bool);
   }
 
   navigateSection(section: string) {
