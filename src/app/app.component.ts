@@ -1,5 +1,5 @@
 import { Component, HostListener, Renderer2 } from '@angular/core';
-
+import { CursorService } from './SERVICE/cursor.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,8 +8,8 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
 export class AppComponent {
   title = 'wolfcycle-website';
 
-
-  constructor(private renderer: Renderer2) { }
+  hover: boolean = false;
+  constructor(private renderer: Renderer2, private service: CursorService) { }
   @HostListener('mousemove', ['$event'])
   mouseMove(e: MouseEvent) {
     const cursor = document.getElementById('cursor');
@@ -17,7 +17,10 @@ export class AppComponent {
     this.renderer.setStyle(cursor, 'top', e.clientY + 'px');
   }
   ngOnInit() {
-    console.log('init')
+    console.log('init');
+    this.service.hover.subscribe(c => {
+      this.hover = c;
+    })
   }
   cursor(e: any) {
     console.log(e, "asdlfkasd");

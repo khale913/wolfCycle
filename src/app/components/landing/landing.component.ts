@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CursorService } from 'src/app/SERVICE/cursor.service';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -17,17 +17,28 @@ export class LandingComponent implements OnInit {
 
   textArrayIndex: number = 0;
   charIndex: number = 0;
-
-  constructor() {
+  hover: boolean = false;
+  constructor(private service: CursorService) {
   }
 
   ngOnInit(): void {
+
+    this.service.hover.subscribe(c => {
+      this.hover = c;
+    })
+
+    // this.service.hoverElement(true);
 
     if (this.textArray.length) {
       setTimeout(() => {
         this.type()
       }, 500);
     }
+
+  }
+
+  hoverFunction(bool: boolean) {
+    this.service.hoverElement(bool);
   }
 
   type() {
