@@ -5,14 +5,18 @@
   </div>
 
   <div class="demo-form-container">
-    <input placeholder="Name" type="text" class="demo-input">
-    <input placeholder="Email" type="text" class="demo-input">
-    <input placeholder="Subject" type="text" class="demo-input">
-    <input placeholder="Phone" type="text" class="demo-input">
+    <input (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" placeholder="Name" type="text"
+      class="demo-input">
+    <input (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" placeholder="Email" type="text"
+      class="demo-input">
+    <input (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" placeholder="Subject" type="text"
+      class="demo-input">
+    <input (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" placeholder="Phone" type="text"
+      class="demo-input">
   </div>
 
   <div class="submit-container">
-    <button class="submit-btn">Submit</button>
+    <button (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" class="submit-btn">Submit</button>
   </div>
 
 </div>
