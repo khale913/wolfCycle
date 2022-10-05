@@ -109,7 +109,7 @@
 }
 
 .landing-btn button:hover {
-  color: --main-yellow;
+  color: var(--main-yellow);
   border: 2px solid var(--main-yellow);
   background-color:var(--dark-grey);
   transition: .2s;
