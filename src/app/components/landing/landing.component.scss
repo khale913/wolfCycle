@@ -48,11 +48,10 @@
   justify-content: flex-start;
   align-items: center;
   z-index: 9999;
-  width: 90%;
+  width: 100%;
   text-align: left;
 }
 .container p {
-  height: 150px;
   font-size: 3rem;
   padding: 0.5rem 0 .5rem 0;
   font-weight: bold;
@@ -156,14 +155,22 @@
 
 }
 
-@media only screen and (min-height: 900px) {
-  .wolfcycle-wolf {
-    height: 1200px;
-    top: -1000px;
+@media only screen and (max-width: 1151px) {
+  .container {
+    width: 90%;
   }
 
+  .container p {
+    height: 150px;
+    font-size: 3rem;
+    padding: 0.5rem 0 .5rem 0;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    // text-align: center;
+    overflow: hidden;
+    z-index: 9999;
+  }
 }
-
 
 @media only screen and (max-width: 1000px) {
   .container p span.typed-text {
@@ -188,6 +195,14 @@
     padding: 0rem 0 0rem 0;
     overflow: hidden;
   }
+}
+
+@media only screen and (min-height: 900px) {
+  .wolfcycle-wolf {
+    height: 1200px;
+    top: -1000px;
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
