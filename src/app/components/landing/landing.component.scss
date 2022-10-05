@@ -10,6 +10,7 @@
   background-color: var(--dark-grey);
   padding-top: 100px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .landing-text-container {
@@ -100,19 +101,21 @@
   background-color: transparent;
   padding: 1rem 2.5rem;
   margin-top: 2rem;
-  cursor: pointer;
+  cursor: none;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   z-index: 999999999;
+
 }
 
 .landing-btn button:hover {
   color: var(--main-yellow);
   border: 2px solid var(--main-yellow);
-  background-color:var(--dark-grey);
+  background-color:transparent;
   transition: .2s;
+
 }
 
 .navigation-dots-container {
@@ -131,7 +134,7 @@
   border-radius: 15px;
   border: 2px solid var(--main-yellow);
   margin-bottom: 3rem;
-  cursor: pointer;
+  cursor: none;
   z-index: 999999999;
 }
 

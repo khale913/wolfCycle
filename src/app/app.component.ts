@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +9,12 @@ export class AppComponent {
   title = 'wolfcycle-website';
 
 
-  constructor() { }
+  constructor(private renderer: Renderer2) { }
   @HostListener('mousemove', ['$event'])
-  mouseMove(event: MouseEvent) {
-    console.log(document.getElementById('cursor'))
-    const curs = document.querySelector('cursor');
-
+  mouseMove(e: MouseEvent) {
+    const cursor = document.getElementById('cursor');
+    this.renderer.setStyle(cursor, 'left', e.clientX + 'px');
+    this.renderer.setStyle(cursor, 'top', e.clientY + 'px');
   }
   ngOnInit() {
     console.log('init')
