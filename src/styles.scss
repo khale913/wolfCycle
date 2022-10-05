@@ -10,8 +10,31 @@
   --dark-grey: #353535;
   --background-grey: #E6E6E6;
   --section-padding: 3rem;
+  --header-text: 4rem;
+  --subhead-text: 1.3rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  :root {
+    --header-text: 3.5rem;
+    --subhead-text: 1.2rem;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  :root {
+    --header-text: 3rem;
+    --subhead-text: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  :root {
+    --header-text: 2.5rem;
+    --subhead-text: .9rem;
+  }
+}
 
  @font-face {
   font-family: 'Century-Gothic';

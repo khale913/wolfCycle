@@ -23,7 +23,7 @@
   font-family: 'Century-Bold';
   color: #605E5E;
   // color:  var(--dark-grey);
-  font-size: 4rem;
+  font-size: var(--header-text);
   text-align: center;
   margin-bottom: 80px;
 }
@@ -33,7 +33,7 @@
   color: #605E5E;
 
   // color:  var(--dark-grey);
-  font-size: 1.3rem;
+  font-size: var(--subhead-text);
   text-align: center;
   margin-bottom: 75px;
 }
@@ -84,9 +84,32 @@ input::placeholder {
   transition: .2s;
 }
 
-@media only screen and (min-width: 1500px) {
-  .section-header h2 {
-    font-size: 5rem;
+// @media only screen and (min-width: 1500px) {
+//   .section-header h2 {
+//     font-size: 5rem;
+//   }
+
+// }
+
+@media only screen and (max-width: 1000px) {
+
+  .demo-input {
+    width: 80%;
   }
 
+  .section-header h2 {
+    margin-bottom: 60px;
   }
+
+  .section-header p {
+    margin-bottom: 60px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .demo-input {
+    width: 90%;
+  }
+
+}

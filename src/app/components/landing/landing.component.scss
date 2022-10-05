@@ -52,6 +52,7 @@
   text-align: left;
 }
 .container p {
+  height: 150px;
   font-size: 3rem;
   padding: 0.5rem 0 .5rem 0;
   font-weight: bold;
@@ -183,7 +184,7 @@
 
   .container p {
     font-size: 3rem;
-    height: 100%;
+    height: 100px;
     padding: 0rem 0 0rem 0;
     overflow: hidden;
   }

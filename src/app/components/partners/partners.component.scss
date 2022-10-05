@@ -19,14 +19,12 @@
 .section-header h2 {
   font-family: 'Century-Bold';
   color: #605E5E;
-  font-size: 4rem;
+  font-size: var(--header-text);
   text-align: center;
 }
 
 
 @media only screen and (min-width: 1500px) {
-.section-header h2 {
-  font-size: 5rem;
-}
+
 
 }
