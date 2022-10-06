@@ -14,8 +14,8 @@ import {
   // animations: [
   //   trigger("slideAnimation", [
   //     /* scale */
-  //     transition("void => *", [useAnimation(scaleIn, { params: { time: '1000ms' } })]),
-  //     transition("* => void", [useAnimation(scaleOut, { params: { time: '1000ms' } })]),
+  //     transition("void => *", [useAnimation(scaleIn, { params: { time: '700ms' } })]),
+  //     transition("* => void", [useAnimation(scaleOut, { params: { time: '350ms' } })]),
   //   ])
   // ]
   animations: [
@@ -42,11 +42,11 @@ export class TestimonialsComponent implements OnInit {
       logo: "../../../assets/partners/Texas-Legends-01.png"
     },
     {
-      quote: "This is a great quote to talk about wolfcycle.ai!",
+      quote: "Our business is booming now that wolfcycle took over!!!",
       name: "Bill Murry",
-      company: "Windy City Bulls",
+      company: "Cirque de solei",
       companyRole: "VP Sales",
-      logo: "../../../assets/partners/bulls.png"
+      logo: "../../../assets/partners/cirque.png"
     },
 
   ];
@@ -55,7 +55,10 @@ export class TestimonialsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    setTimeout(() => {
+      this.onNextClick();
+      console.log('call next click')
+    }, 3000);
   }
 
 
@@ -70,6 +73,9 @@ export class TestimonialsComponent implements OnInit {
     const next = this.currentSlide + 1;
     this.currentSlide = next === this.slides.length ? 0 : next;
     console.log("next clicked, new current slide is: ", this.currentSlide);
+    setTimeout(() => {
+      this.onNextClick()
+    }, 5000);
   }
 
 }
