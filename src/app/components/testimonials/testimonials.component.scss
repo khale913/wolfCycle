@@ -138,6 +138,13 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+}
+
 @media only screen and (max-width: 800px) {
   .container {
     background-color: white;
@@ -175,7 +182,4 @@
 
 }
 
-@media only screen and (max-width: 800px) {
 
-
-}
