@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { DemoComponent } from './components/demo/demo.component';
 import { UnknownPageComponent } from './components/unknown-page/unknown-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -24,12 +26,14 @@ import { FooterComponent } from './components/footer/footer.component';
     UnknownPageComponent,
     NavbarComponent,
     FooterComponent,
+    CarouselComponent,
 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

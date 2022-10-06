@@ -1,12 +1,26 @@
-<div class="testimonial-container">
+<div class="testimonial-container container">
   <!-- <div class="section-header">
     <h2>TESTIMONIALS</h2>
   </div> -->
+  <div class="carousel">
+    <ng-container *ngFor="let slide of slides; let i = index">
+      <div (click)="onNextClick()" *ngIf="i === currentSlide" class="content-container slide" @carouselAnimation>
+        <div class="quote-container carousel">
+          <h2 class="quote-text">{{slide.quote}}</h2>
+          <div class="business">
+            <h3 class="quote-speaker">- {{slide.name}}</h3>
+            <p class="quote-business">{{slide.companyRole}}, {{slide.company}}</p>
+          </div>
+        </div>
+        <div class="center-container">
+          <div class="line"></div>
+          <img src="../../../assets/logos/wolf-black.png" alt="wolfcycle wolf">
 
-  <div class="content-container">
-    <div class="quote-container"></div>
-    <div class="center-line"></div>
-    <div class="logo-container"></div>
+        </div>
+        <div class="logo-container">
+          <img src="{{slide.logo}}" alt="">
+        </div>
+      </div>
+    </ng-container>
   </div>
-
 </div>
