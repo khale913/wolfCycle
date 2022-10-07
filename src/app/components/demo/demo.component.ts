@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CursorService } from 'src/app/SERVICE/cursor.service';
+
 @Component({
   selector: 'app-demo',
   templateUrl: './demo.component.html',

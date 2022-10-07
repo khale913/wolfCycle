@@ -31,4 +31,8 @@ export class AppComponent {
   cursor(e: any) {
     console.log(e, "asdlfkasd");
   }
+
+  testing() {
+    console.log('demo in view')
+  }
 }

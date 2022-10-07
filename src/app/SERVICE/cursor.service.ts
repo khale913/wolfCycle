@@ -19,7 +19,7 @@ export class CursorService {
 
   hoverElement(bool: boolean) {
     this.hover.next(bool);
-    console.log(bool)
+    // console.log(bool)
   }
 
 }
