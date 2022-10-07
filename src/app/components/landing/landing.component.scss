@@ -221,6 +221,16 @@
 
 }
 
+@media only screen and (max-width: 750px) {
+  .landing-btn button {
+    cursor: pointer;
+  }
+
+  .dot {
+    cursor: pointer;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .container p span.typed-text {
     font-size: 3rem;

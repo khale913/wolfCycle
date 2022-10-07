@@ -41,6 +41,7 @@ export class LandingComponent implements OnInit {
     this.service.hoverElement(bool);
   }
 
+
   type() {
     this.cursorSpan = document.querySelector('.cursor');
     this.typedTextSpan = document.querySelector('.typed-text');

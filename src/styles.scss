@@ -7,11 +7,13 @@
 
 :root {
   --main-yellow: #FAFE2A;
+  // --main-yellow: rgb(231,255,109);
   --dark-grey: #353535;
+  --light-grey: #605E5E;
   --background-grey: #E6E6E6;
   --section-padding: 3rem;
-  --header-text: 4rem;
-  --subhead-text: 1.3rem;
+  --header-text: 5rem;
+  --subhead-text: 1.5rem;
 }
 
 @media only screen and (max-width: 1000px) {

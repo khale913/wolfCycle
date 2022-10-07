@@ -4,7 +4,7 @@
   </div> -->
   <div class="carousel">
     <ng-container *ngFor="let slide of slides; let i = index">
-      <div (click)="onNextClick()" *ngIf="i === currentSlide" class="content-container slide" @carouselAnimation>
+      <div *ngIf="i === currentSlide" class="content-container slide" @carouselAnimation>
         <div class="quote-container carousel">
           <h2 class="quote-text">{{slide.quote}}</h2>
           <div class="business">

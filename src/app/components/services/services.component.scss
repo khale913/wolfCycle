@@ -154,6 +154,14 @@
 
 }
 
+@media only screen and (max-width: 750px) {
+  .contact-btn {
+
+    cursor: pointer;
+  }
+
+  }
+
 @media only screen and (max-width: 500px) {
   .btn-container {
     margin-top: -10px;

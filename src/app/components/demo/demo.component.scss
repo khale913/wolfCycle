@@ -29,7 +29,7 @@
 }
 
 .section-header p {
-  font-family: 'Century-Gothic';
+  font-family: 'Century-Bold';
   color: #605E5E;
 
   // color:  var(--dark-grey);
@@ -106,6 +106,16 @@ input::placeholder {
     margin-bottom: 60px;
   }
 
+}
+
+@media only screen and (max-width: 750px) {
+  .demo-input {
+    cursor: pointer;
+  }
+
+  .submit-btn {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 800px) {

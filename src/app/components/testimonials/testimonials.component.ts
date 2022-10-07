@@ -21,7 +21,7 @@ import {
   animations: [
     trigger("carouselAnimation", [
       transition("void => *", [useAnimation(fadeIn, { params: { time: '800ms' } })]),
-      transition("* => void", [useAnimation(fadeOut, { params: { time: '800ms' } })]),
+      transition("* => void", [useAnimation(fadeOut, { params: { time: '600ms' } })]),
     ])
   ],
 })
