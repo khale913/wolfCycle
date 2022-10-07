@@ -94,10 +94,10 @@
 }
 
 .landing-btn button {
-  font-family: 'Century-Gothic';
+  font-family: 'Century-Bold';
   font-size: 1rem;
   color: white;
-  border: 2px solid white;
+  border: 4px solid white;
   background-color: transparent;
   padding: 1rem 2.5rem;
   margin-top: 2rem;
@@ -112,7 +112,7 @@
 
 .landing-btn button:hover {
   color: var(--main-yellow);
-  border: 2px solid var(--main-yellow);
+  border-color: var(--main-yellow);
   background-color:transparent;
   transition: .2s;
 

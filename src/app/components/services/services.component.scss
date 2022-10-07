@@ -80,6 +80,14 @@
   border: 5px solid #605E5E;
   color: #605E5E;
   padding: 1rem 2.5rem;
+  transition: .2s;
+  cursor: none;
+}
+
+.contact-btn:hover {
+  color: var(--main-yellow);
+  border-color: var(--main-yellow);
+  transition: .2s;
 }
 
 
