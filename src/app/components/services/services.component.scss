@@ -12,7 +12,9 @@
 
 .section-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: var(--section-padding);
 }
 
@@ -21,6 +23,12 @@
   color: #E6E6E6;
   font-size: var(--header-text);
   text-align: center;
+}
+
+.section-header p {
+  font-family: 'Century-Bold';
+  font-size: .9rem;
+  color: #E6E6E6;
 }
 
 .services-content_container {
@@ -42,7 +50,7 @@
 .service-title {
   display: flex;
   font-family: 'Century-Bold';
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .number {
@@ -53,7 +61,7 @@
 
 .title {
   color: white;
-  white-space: nowrap;
+  white-space: pre-wrap;
 }
 
 .service-description {
