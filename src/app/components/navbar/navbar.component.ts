@@ -28,7 +28,8 @@ export class NavbarComponent implements OnInit {
       block: "start",
       inline: "nearest"
     });
-
+    console.log(section);
+    this.navOpen = false;
   }
 
   operateNav() {

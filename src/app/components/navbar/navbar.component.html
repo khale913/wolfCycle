@@ -30,10 +30,15 @@
 
 <div id="mySidenav" class="sidenav" [ngClass]="{'nav-open': navOpen === true}">
   <!-- <a href="javascript:void(0)" class="closebtn" (click)="operateNav()">&times;</a> -->
-  <a [ngClass]="{'active-mobile-tab': activeTab === 'home'}" class="mobile-tab" href="#">Home</a>
-  <a [ngClass]="{'active-mobile-tab': activeTab === 'partners'}" class="mobile-tab" href="#">Partners</a>
-  <a [ngClass]="{'active-mobile-tab': activeTab === 'testimonials'}" class="mobile-tab" href="#">Testimonials</a>
-  <a [ngClass]="{'active-mobile-tab': activeTab === 'services'}" class="mobile-tab" href="#">Services</a>
-  <a [ngClass]="{'active-mobile-tab': activeTab === 'contact'}" class="mobile-tab" href="#">Contact</a>
+  <a [ngClass]="{'active-mobile-tab': activeTab === 'home'}" class="mobile-tab"
+    (click)="navigateSection('home')">Home</a>
+  <a [ngClass]="{'active-mobile-tab': activeTab === 'partners'}" class="mobile-tab"
+    (click)="navigateSection('partners')">Partners</a>
+  <a [ngClass]="{'active-mobile-tab': activeTab === 'testimonials'}" class="mobile-tab"
+    (click)="navigateSection('testimonials')">Testimonials</a>
+  <a [ngClass]="{'active-mobile-tab': activeTab === 'services'}" class="mobile-tab"
+    (click)="navigateSection('services')">Services</a>
+  <a [ngClass]="{'active-mobile-tab': activeTab === 'contact'}" class="mobile-tab"
+    (click)="navigateSection('contact')">Contact</a>
 
 </div>
