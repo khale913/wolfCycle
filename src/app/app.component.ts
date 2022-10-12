@@ -1,4 +1,4 @@
-import { Component, HostListener, Renderer2 } from '@angular/core';
+import { Component, HostListener, Renderer2, ViewChild } from '@angular/core';
 import { CursorService } from './SERVICE/cursor.service';
 @Component({
   selector: 'app-root',
@@ -22,6 +22,7 @@ export class AppComponent {
     this.renderer.setStyle(cursor, 'left', e.clientX + 'px');
     this.renderer.setStyle(cursor, 'top', e.clientY + 'px');
   }
+
   ngOnInit() {
     console.log('init');
     this.service.hover.subscribe(c => {
@@ -29,7 +30,6 @@ export class AppComponent {
     })
   }
   cursor(e: any) {
-    console.log(e, "asdlfkasd");
   }
 
   testing() {
