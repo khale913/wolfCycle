@@ -1,12 +1,16 @@
 <!-- <router-outlet></router-outlet> -->
+<h1>Is div shown? {{isLandingDivScrolledIntoView ? 'Yes!' : 'No :-('}}</h1>
+
 
 <app-navbar></app-navbar>
+<div #landingDiv class="test"></div>
 <app-landing id="home"></app-landing>
 <app-partners id="partners"></app-partners>
 <!-- <div class="container">
   <app-carousel [slides]="slides"></app-carousel>
 </div> -->
 <app-testimonials id="testimonials"></app-testimonials>
+
 <app-services id="services"></app-services>
 <app-demo id="contact"></app-demo>
 <app-footer></app-footer>
