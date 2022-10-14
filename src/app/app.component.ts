@@ -8,18 +8,45 @@ import { CursorService } from './SERVICE/cursor.service';
 })
 export class AppComponent {
   @ViewChild('landingDiv', { static: false })
-  private landingDiv!: ElementRef<HTMLDivElement>;
-  isLandingDivScrolledIntoView!: boolean;
+  private landingDiv!: ElementRef<HTMLDivElement>
+
+  @ViewChild('partnerDiv', { static: false })
+  private partnerDiv!: ElementRef<HTMLDivElement>
+
+  @ViewChild('topDiv', { static: false })
+  private topDiv!: ElementRef<HTMLDivElement>
 
   @HostListener('window:scroll', ['$event'])
   isScrolledIntoView() {
+    if (this.topDiv) {
+      const rect = this.topDiv.nativeElement.getBoundingClientRect();
+      const topShown = rect.top >= 0;
+      const bottomShown = rect.bottom <= window.innerHeight;
+      if (bottomShown === true) {
+        console.log('LANDING')
+      }
+    }
+
     if (this.landingDiv) {
       const rect = this.landingDiv.nativeElement.getBoundingClientRect();
       const topShown = rect.top >= 0;
       const bottomShown = rect.bottom <= window.innerHeight;
-      this.isLandingDivScrolledIntoView = topShown && bottomShown;
+      if (topShown === true && bottomShown === true) {
+        console.log('PARTNERS')
+      }
+    }
+
+    if (this.partnerDiv) {
+      const rect = this.partnerDiv.nativeElement.getBoundingClientRect();
+      const topShown = rect.top >= 0;
+      const bottomShown = rect.bottom <= window.innerHeight;
+      // console.log('partner', topShown, bottomShown,)
+      if (topShown === true && bottomShown === true) {
+        console.log('TESTIMONIALS')
+      }
     }
   }
+
 
   title = 'wolfcycle-website';
   hover: boolean = false;

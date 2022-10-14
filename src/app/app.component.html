@@ -1,18 +1,19 @@
 <!-- <router-outlet></router-outlet> -->
-<h1>Is div shown? {{isLandingDivScrolledIntoView ? 'Yes!' : 'No :-('}}</h1>
+<!-- <h1>Is div shown? {{isLandingDivScrolledIntoView ? 'Yes!' : 'No :-('}}</h1> -->
 
 
 <app-navbar></app-navbar>
-<div #landingDiv class="test"></div>
+<div #topDiv class="test"></div>
 <app-landing id="home"></app-landing>
+<div #landingDiv class="test"></div>
 <app-partners id="partners"></app-partners>
-<!-- <div class="container">
-  <app-carousel [slides]="slides"></app-carousel>
-</div> -->
+<div #partnerDiv class="test"></div>
 <app-testimonials id="testimonials"></app-testimonials>
-
+<div #testimDiv class="test"></div>
 <app-services id="services"></app-services>
+<div #serviceDiv class="test"></div>
 <app-demo id="contact"></app-demo>
+<div #contactDiv class="test"></div>
 <app-footer></app-footer>
 <div (mousemove)="cursor($event)" class="cursor-wrapper">
   <div id="cursor" class="cursor" [ngClass]="{'hover' : hover === true}"></div>
