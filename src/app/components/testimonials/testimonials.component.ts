@@ -75,7 +75,7 @@ export class TestimonialsComponent implements OnInit {
     // console.log("next clicked, new current slide is: ", this.currentSlide);
     setTimeout(() => {
       this.onNextClick()
-    }, 5000);
+    }, 7000);
   }
 
 }

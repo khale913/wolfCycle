@@ -5,7 +5,8 @@
 }
 
 .partners-container {
-  background-color: var(--background-grey);
+  // background-color: var(--background-grey);
+  background-color: white;
   z-index: 999;
 }
 
@@ -29,15 +30,23 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 25px 7% 25px 7%;
+  padding: 25px 10% 25px 10%;
 }
 
 .logo {
   object-fit: cover;
-  width: 150px;
+  width: 80px;
   height: auto;
   // filter: grayscale(9);
-  margin: .5rem;
+  margin: 1.5rem;
+}
+
+.min-logo {
+  width: 60px;
+}
+
+.max-logo {
+  width: 90px;
 }
 
 .extra-width {
@@ -57,13 +66,18 @@
 
   .logo {
     object-fit: cover;
-    width: 125px;
+    width: 60px;
     margin: .5rem;
   }
-
-  .extra-width {
-    width: 175px;
+  .min-logo {
+    width: 50px;
   }
+
+  .max-logo {
+    width: 70px;
+  }
+
+
 
 }
 
@@ -74,29 +88,39 @@
 
   .logo {
     object-fit: cover;
-    width: 95px;
+    width: 60px;
     margin: .5rem;
   }
 
-  .extra-width {
-    width: 145px;
+  .min-logo {
+    width: 50px;
   }
+
+  .max-logo {
+    width: 70px;
+  }
+
 
 }
 
 @media only screen and (max-width: 450px) {
   .partners-logo-container {
-    padding: 40px 2% 10px 2%;
+    padding: 20px 10% 10px 10%;
   }
 
   .logo {
     object-fit: cover;
-    width: 95px;
+    width: 70px;
     margin: .2rem;
   }
 
-  .extra-width {
-    width: 145px;
+  .min-logo {
+    width: 60px;
   }
+
+  .max-logo {
+    width: 80px;
+  }
+
 
 }
