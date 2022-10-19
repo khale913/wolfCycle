@@ -29,25 +29,25 @@ export class TestimonialsComponent implements OnInit {
   public slides: any = [
     {
       quote: "This is a great quote to talk about wolfcycle.ai!",
-      name: "Bill Murry",
-      company: "Windy City Bulls",
+      name: "John Doe",
+      company: "Buffalo Sabres",
       companyRole: "VP Sales",
-      logo: "../../../assets/partners/bulls.png"
+      logo: "../../../assets/partners-new/Buffalo-Sabres-Logo.png"
     },
-    {
-      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
-      name: "Bill Murry",
-      company: "Texas Legends",
-      companyRole: "CEO",
-      logo: "../../../assets/partners/Texas-Legends-01.png"
-    },
-    {
-      quote: "Our business is booming now that wolfcycle took over!!!",
-      name: "Bill Murry",
-      company: "Cirque de solei",
-      companyRole: "VP Sales",
-      logo: "../../../assets/partners/cirque.png"
-    },
+    // {
+    //   quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    //   name: "Bill Murry",
+    //   company: "Texas Legends",
+    //   companyRole: "CEO",
+    //   logo: "../../../assets/partners/Texas-Legends-01.png"
+    // },
+    // {
+    //   quote: "Our business is booming now that wolfcycle took over!!!",
+    //   name: "Bill Murry",
+    //   company: "Cirque de solei",
+    //   companyRole: "VP Sales",
+    //   logo: "../../../assets/partners/cirque.png"
+    // },
 
   ];
 
