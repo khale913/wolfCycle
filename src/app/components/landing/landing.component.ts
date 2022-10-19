@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CursorService } from 'src/app/SERVICE/cursor.service';
+import { ActiveTabService } from 'src/app/SERVICE/active-tab.service';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -18,13 +19,18 @@ export class LandingComponent implements OnInit {
   textArrayIndex: number = 0;
   charIndex: number = 0;
   hover: boolean = false;
-  constructor(private service: CursorService) {
+  count: any;
+  constructor(private service: CursorService, private tabService: ActiveTabService) {
   }
 
   ngOnInit(): void {
 
     this.service.hover.subscribe(c => {
       this.hover = c;
+    })
+
+    this.tabService.count.subscribe(c => {
+      this.count = c;
     })
 
     // this.service.hoverElement(true);

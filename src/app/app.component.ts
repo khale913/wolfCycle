@@ -1,50 +1,62 @@
-import { Component, HostListener, Renderer2, ViewChild, ElementRef } from '@angular/core';
+import { Component, HostListener, Renderer2, ViewChild, ElementRef, Host } from '@angular/core';
 import { CursorService } from './SERVICE/cursor.service';
-
+import { ActiveTabService } from './SERVICE/active-tab.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  @ViewChild('landingDiv', { static: false })
-  private landingDiv!: ElementRef<HTMLDivElement>
+  activeSection: string = 'landing';
 
-  @ViewChild('partnerDiv', { static: false })
-  private partnerDiv!: ElementRef<HTMLDivElement>
 
-  @ViewChild('topDiv', { static: false })
-  private topDiv!: ElementRef<HTMLDivElement>
+  @ViewChild('landingDiv') landingDiv!: ElementRef;
+  @ViewChild('partnerDiv') partnerDiv!: ElementRef;
+  @ViewChild('testimDiv') testimDiv!: ElementRef;
+  @ViewChild('serviceDiv') serviceDiv!: ElementRef;
+  @ViewChild('contactDiv') contactDiv!: ElementRef;
 
-  @HostListener('window:scroll', ['$event'])
-  isScrolledIntoView() {
-    if (this.topDiv) {
-      const rect = this.topDiv.nativeElement.getBoundingClientRect();
-      const topShown = rect.top >= 0;
-      const bottomShown = rect.bottom <= window.innerHeight;
-      if (bottomShown === true) {
-        console.log('LANDING')
-      }
+  @HostListener('document:scroll', ['$event'])
+  public onViewPortScroll() {
+    const windowHeight = window.innerHeight;
+    const landingRect = this.landingDiv.nativeElement.getBoundingClientRect();
+    const partnerRect = this.partnerDiv.nativeElement.getBoundingClientRect();
+    const testimRect = this.testimDiv.nativeElement.getBoundingClientRect();
+    const serviceRect = this.serviceDiv.nativeElement.getBoundingClientRect();
+    const contactRect = this.contactDiv.nativeElement.getBoundingClientRect();
+
+
+    // console.log(this.activeSection)
+    if (landingRect.top >= 100) {
+      this.activeSection = 'landing';
+      this.tabService.nextCount(1);
     }
 
-    if (this.landingDiv) {
-      const rect = this.landingDiv.nativeElement.getBoundingClientRect();
-      const topShown = rect.top >= 0;
-      const bottomShown = rect.bottom <= window.innerHeight;
-      if (topShown === true && bottomShown === true) {
-        console.log('PARTNERS')
-      }
+    if (landingRect.top <= 100 && partnerRect.top >= 80) {
+      this.activeSection = 'partners';
+      this.tabService.nextCount(2);
     }
 
-    if (this.partnerDiv) {
-      const rect = this.partnerDiv.nativeElement.getBoundingClientRect();
-      const topShown = rect.top >= 0;
-      const bottomShown = rect.bottom <= window.innerHeight;
-      // console.log('partner', topShown, bottomShown,)
-      if (topShown === true && bottomShown === true) {
-        console.log('TESTIMONIALS')
-      }
+    if (partnerRect.top <= 100 && testimRect.top >= 80) {
+      this.activeSection = 'testimonials';
+      this.tabService.nextCount(3);
+
     }
+
+    if (testimRect.top <= 100 && serviceRect.top >= 50) {
+      this.activeSection = 'services';
+      this.tabService.nextCount(4);
+
+    }
+
+    if (serviceRect.top <= 100 && contactRect.top >= 50) {
+      this.activeSection = 'contact';
+      this.tabService.nextCount(5);
+
+    }
+
+
+
   }
 
 
@@ -56,9 +68,9 @@ export class AppComponent {
     { src: "https://images.unsplash.com/photo-1664992892797-781fcf7b7541?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" },
   ];
 
+  count: any;
 
-
-  constructor(private renderer: Renderer2, private service: CursorService) { }
+  constructor(private renderer: Renderer2, private service: CursorService, private tabService: ActiveTabService) { }
   @HostListener('mousemove', ['$event'])
   mouseMove(e: MouseEvent) {
     const cursor = document.getElementById('cursor');
@@ -71,6 +83,11 @@ export class AppComponent {
     this.service.hover.subscribe(c => {
       this.hover = c;
     })
+
+    this.tabService.count.subscribe(c => {
+      this.count = c;
+    })
+
   }
   cursor(e: any) {
   }

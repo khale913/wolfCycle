@@ -136,10 +136,12 @@
   margin-bottom: 3rem;
   cursor: none;
   z-index: 999999999;
+  transition: 1s;
 }
 
-.one {
+.active-dot {
   background-color: var(--main-yellow);
+  transition: 1s;
 }
 
 @media only screen and (min-width: 1500px) {

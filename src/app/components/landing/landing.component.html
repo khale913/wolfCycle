@@ -23,9 +23,14 @@
 </div>
 
 <div class="navigation-dots-container">
-  <div class="dot one" (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"></div>
-  <div class="dot two" (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"></div>
-  <div class="dot three" (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"></div>
-  <div class="dot four" (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"></div>
-  <div class="dot five" (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"></div>
+  <div class="dot one" [ngClass]="{'active-dot': count === 1}" (mouseenter)="hoverFunction(true)"
+    (mouseleave)="hoverFunction(false)"></div>
+  <div class="dot two" [ngClass]="{'active-dot': count === 2}" (mouseenter)="hoverFunction(true)"
+    (mouseleave)="hoverFunction(false)"></div>
+  <div class="dot three" [ngClass]="{'active-dot': count === 3}" (mouseenter)="hoverFunction(true)"
+    (mouseleave)="hoverFunction(false)"></div>
+  <div class="dot four" [ngClass]="{'active-dot': count === 4}" (mouseenter)="hoverFunction(true)"
+    (mouseleave)="hoverFunction(false)"></div>
+  <div class="dot five" [ngClass]="{'active-dot': count === 5}" (mouseenter)="hoverFunction(true)"
+    (mouseleave)="hoverFunction(false)"></div>
 </div>
