@@ -102,8 +102,12 @@ export class LandingComponent implements OnInit {
     }
   }
 
-  clickedHere() {
-    console.log('aclciac');
+  navigateSection(section: string) {
+    document.getElementById(section)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
   }
 
 }

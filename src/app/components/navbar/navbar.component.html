@@ -8,19 +8,19 @@
 
   <div class="navbar-tabs-container">
     <ul class="tabs-ul">
-      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"
-        [ngClass]="{'active-tab': activeTab === 'home'}" class="tab" (click)="navigateSection('home')">Home</li>
-      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"
-        [ngClass]="{'active-tab': activeTab === 'partners'}" class="tab" (click)="navigateSection('partners')">
+      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 1}"
+        class="tab" (click)="navigateSection('home')">Home</li>
+      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 2}"
+        class="tab" (click)="navigateSection('partners')">
         Partners</li>
-      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"
-        [ngClass]="{'active-tab': activeTab === 'testimonials'}" class="tab" (click)="navigateSection('testimonials')">
+      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 3}"
+        class="tab" (click)="navigateSection('testimonials')">
         Testimonials</li>
-      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"
-        [ngClass]="{'active-tab': activeTab === 'services'}" class="tab" (click)="navigateSection('services')">
+      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 4}"
+        class="tab" (click)="navigateSection('services')">
         Services</li>
-      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)"
-        [ngClass]="{'active-tab': activeTab === 'contact'}" class="tab" (click)="navigateSection('contact')">Contact
+      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 5}"
+        class="tab" (click)="navigateSection('contact')">Contact
       </li>
     </ul>
   </div>

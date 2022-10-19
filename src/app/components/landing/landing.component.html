@@ -24,13 +24,13 @@
 
 <div class="navigation-dots-container">
   <div class="dot one" [ngClass]="{'active-dot': count === 1}" (mouseenter)="hoverFunction(true)"
-    (mouseleave)="hoverFunction(false)"></div>
+    (mouseleave)="hoverFunction(false)" (click)="navigateSection('home')"></div>
   <div class="dot two" [ngClass]="{'active-dot': count === 2}" (mouseenter)="hoverFunction(true)"
-    (mouseleave)="hoverFunction(false)"></div>
+    (mouseleave)="hoverFunction(false)" (click)="navigateSection('partners')"></div>
   <div class="dot three" [ngClass]="{'active-dot': count === 3}" (mouseenter)="hoverFunction(true)"
-    (mouseleave)="hoverFunction(false)"></div>
+    (mouseleave)="hoverFunction(false)" (click)="navigateSection('testimonials')"></div>
   <div class="dot four" [ngClass]="{'active-dot': count === 4}" (mouseenter)="hoverFunction(true)"
-    (mouseleave)="hoverFunction(false)"></div>
+    (mouseleave)="hoverFunction(false)" (click)="navigateSection('services')"></div>
   <div class="dot five" [ngClass]="{'active-dot': count === 5}" (mouseenter)="hoverFunction(true)"
-    (mouseleave)="hoverFunction(false)"></div>
+    (mouseleave)="hoverFunction(false)" (click)="navigateSection('contact')"></div>
 </div>
