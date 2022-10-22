@@ -46,6 +46,10 @@
 }
 
 .min-logo {
+  width: 70px !important;
+}
+
+.sc-logo {
   width: 60px !important;
 }
 
@@ -68,7 +72,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 calc(12.5%);   /* flex-basis adjustment for margin */
+  flex: 0 0 calc(13.5%);   /* flex-basis adjustment for margin */
   // margin: 5px;
 }
 
@@ -112,7 +116,9 @@
     width: 70px;
   }
 
-
+  .sc-logo {
+    width: 45px !important;
+  }
 
 }
 
