@@ -20,4 +20,12 @@ export class ServicesComponent implements OnInit {
     this.service.hoverElement(bool);
   }
 
+  navigateSection(section: string) {
+    document.getElementById(section)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  }
+
 }
