@@ -75,7 +75,7 @@ input::placeholder {
   background-color: transparent;
   border: 5px solid  var(--dark-grey);
   color:  var(--dark-grey);
-  cursor: none;
+  cursor: pointer;
   transition: .2s;
 }
 
@@ -83,6 +83,16 @@ input::placeholder {
   // background-color: var(--main-yellow);
   background-color: rgb(174, 174, 174);
   transition: .2s;
+}
+
+.disable {
+  opacity: 20%;
+}
+
+.disable:hover {
+  background-color: transparent;
+  transition: 0s;
+  cursor:not-allowed;
 }
 
 // @media only screen and (min-width: 1500px) {
