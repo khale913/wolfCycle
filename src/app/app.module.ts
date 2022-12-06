@@ -35,7 +35,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    // FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
