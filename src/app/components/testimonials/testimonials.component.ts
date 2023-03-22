@@ -28,7 +28,7 @@ import {
 export class TestimonialsComponent implements OnInit {
   public slides: any = [
     {
-      quote: "WolfCycle has enabled our sales & service to engage with our fanbase to set up face-to-face meetings.  The support and resources provided by their service has allowed us to become more effective and efficient in our sales process, while driving results for our organization.",
+      quote: "WolfCycle has enabled our sales & service teams to engage with our fanbase to set up face-to-face meetings.  The support and resources provided by their service has allowed us to become more effective and efficient in our sales process, while driving results for our organization.",
       name: "Frank Batres-Landaeta",
       company: "Buffalo Sabres",
       companyRole: "VP Sales & Service",
