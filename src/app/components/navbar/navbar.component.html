@@ -10,7 +10,7 @@
     <ul class="tabs-ul">
       <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 1}"
         class="tab" (click)="navigateSection('home')">Home</li>
-      <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 2}"
+      <!-- <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 2}"
         class="tab" (click)="navigateSection('partners')">
         Partners</li>
       <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 3}"
@@ -18,7 +18,7 @@
         Testimonials</li>
       <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 4}"
         class="tab" (click)="navigateSection('services')">
-        Services</li>
+        Services</li> -->
       <li (mouseenter)="hoverFunction(true)" (mouseleave)="hoverFunction(false)" [ngClass]="{'active-tab': count === 5}"
         class="tab" (click)="navigateSection('contact')">Contact
       </li>
@@ -31,12 +31,12 @@
 <div id="mySidenav" class="sidenav" [ngClass]="{'nav-open': navOpen === true}">
   <!-- <a href="javascript:void(0)" class="closebtn" (click)="operateNav()">&times;</a> -->
   <a [ngClass]="{'active-mobile-tab': count === 1}" class="mobile-tab" (click)="navigateSection('home')">Home</a>
-  <a [ngClass]="{'active-mobile-tab':  count === 2}" class="mobile-tab"
+  <!-- <a [ngClass]="{'active-mobile-tab':  count === 2}" class="mobile-tab"
     (click)="navigateSection('partners')">Partners</a>
   <a [ngClass]="{'active-mobile-tab':  count === 3}" class="mobile-tab"
     (click)="navigateSection('testimonials')">Testimonials</a>
   <a [ngClass]="{'active-mobile-tab':  count === 4}" class="mobile-tab"
-    (click)="navigateSection('services')">Services</a>
+    (click)="navigateSection('services')">Services</a> -->
   <a [ngClass]="{'active-mobile-tab': count === 5}" class="mobile-tab" (click)="navigateSection('contact')">Contact</a>
 
 </div>
